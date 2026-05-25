@@ -142,7 +142,7 @@ export default function App() {
           
           {/* Logo Brand layout */}
           <a href="#" className="flex items-center space-x-3 group outline-none">
-            <LogoBadge className="w-13 h-13 transition-transform group-hover:rotate-6" />
+            <LogoBadge className="w-20 h-20 transition-transform group-hover:rotate-6" />
             <div className="flex flex-col">
               <span className="font-serif text-lg md:text-xl font-bold tracking-tight text-ocean-950 leading-none">
                 First Class Tours
@@ -1002,7 +1002,7 @@ export default function App() {
             {/* Col 1 Brand */}
             <div className="md:col-span-4 space-y-4">
               <a href="#" className="flex items-center space-x-3 outline-none">
-                <LogoBadge className="w-12 h-12" />
+                <LogoBadge className="w-16 h-16" />
                 <div className="flex flex-col text-left">
                   <span className="font-serif text-base font-bold text-white leading-tight">
                     First Class Tours
