@@ -321,16 +321,11 @@ export default function App() {
 
               {/* Verified Trust Strip */}
               <div className="flex flex-wrap items-center gap-x-6 gap-y-3.5 pt-2 border-y border-white/10 py-5 max-w-2xl">
-                <div className="flex items-center gap-1">
-                  <div className="flex text-sand-400">
-                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 fill-sand-400 inline" />)}
-                  </div>
-                  <span className="text-xs font-extrabold text-white">4.9 Score</span>
-                </div>
+                <span className="text-xs font-semibold text-ocean-200">Owner-Operated Since 2014</span>
                 <div className="h-4 w-px bg-white/20 hidden sm:block" />
-                <span className="text-xs font-semibold text-ocean-200">600+ Guests Served Since 2014</span>
+                <span className="text-xs font-semibold text-ocean-200">Freeport, Grand Bahama</span>
                 <div className="h-4 w-px bg-white/20 hidden sm:block" />
-                <span className="text-xs font-semibold text-ocean-200">Open 24/7 Island Operator</span>
+                <span className="text-xs font-semibold text-ocean-200">Food Tours · Beach · Sightseeing</span>
               </div>
 
               {/* Action Buttons */}
@@ -695,7 +690,7 @@ export default function App() {
                 No Corporate Shortcuts.<br />Just Real Bahamian Hospitality.
               </h2>
               <p className="text-sm md:text-base text-ocean-700 font-light leading-relaxed">
-                First Class Tours is built on a simple premise: a premium transit company in the Bahamas should be as warm as the island itself, and as punctual as a Swiss clock. Harold Adderley and his family have spent years tracking Freeport roads, secret pristine beach access points, and optimal cruise schedules to perfect your visit.
+                First Class Tours is built around one thing: Harold Adderley knows Grand Bahama in a way no guidebook can match. He grew up here, knows where the real food is, knows which beaches don't show up on tourist maps, and shows up on time.
               </p>
 
               <div className="space-y-4 pt-4 border-t border-ocean-200">
@@ -704,9 +699,9 @@ export default function App() {
                     ✓
                   </div>
                   <div>
-                    <h4 className="text-xs md:text-sm font-bold text-ocean-950">Grand Bahama Local Knowledge</h4>
+                    <h4 className="text-xs md:text-sm font-bold text-ocean-950">Real Local Knowledge</h4>
                     <p className="text-xs text-ocean-600 mt-0.5 font-light leading-normal">
-                      We do not just drive. We share the authentic history of Grand Bahama, recommending the real places to eat fresh conch and escape the tourist crowds.
+                      Harold shares the authentic side of Grand Bahama — where locals actually eat, which beaches are worth it, and what's genuinely worth your time on the island.
                     </p>
                   </div>
                 </div>
@@ -716,9 +711,9 @@ export default function App() {
                     ✓
                   </div>
                   <div>
-                    <h4 className="text-xs md:text-sm font-bold text-ocean-950">24/7 Security & Comfort Assurance</h4>
+                    <h4 className="text-xs md:text-sm font-bold text-ocean-950">Clean Vehicles, Direct Communication</h4>
                     <p className="text-xs text-ocean-600 mt-0.5 font-light leading-normal">
-                      Our vehicles are strictly maintained, certified by the Bahamian Ministry of Tourism, and fully air-conditioned for your peace of mind.
+                      Air-conditioned, well-maintained vehicles and a direct line to Harold on WhatsApp — no middlemen, no dispatchers, no surprises.
                     </p>
                   </div>
                 </div>
@@ -727,19 +722,15 @@ export default function App() {
               {/* Harold signature block */}
               <div className="pt-6 border-t border-ocean-150 flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  {/* Photo representing Harold - handsome professional local transport owner styled portrait */}
-                  <img
-                    src="https://images.unsplash.com/photo-1542103749-8ef59b94f4d3?auto=format&fit=crop&q=80&w=200"
-                    alt="Harold Adderley"
-                    referrerPolicy="no-referrer"
-                    className="w-12 h-12 rounded-full object-cover border-2 border-sand-400"
-                  />
+                  <div className="w-12 h-12 rounded-full bg-ocean-100 border-2 border-sand-400 flex items-center justify-center">
+                    <span className="text-ocean-800 font-bold text-lg font-serif">H</span>
+                  </div>
                   <div>
                     <h4 className="text-sm font-bold text-ocean-950">Harold Adderley</h4>
-                    <span className="text-[10px] uppercase font-bold text-ocean-650 tracking-wider">Owner, First Class Tours</span>
+                    <span className="text-[10px] uppercase font-bold text-ocean-500 tracking-wider">Owner & Guide, First Class Tours</span>
                   </div>
                 </div>
-                
+
                 <div className="bg-white px-4 py-2 rounded-lg border border-ocean-150 text-right">
                   <span className="text-[8px] uppercase tracking-wider font-bold block text-ocean-500">Contact Harold</span>
                   <a href="tel:+12428172900" className="text-xs font-mono font-bold text-ocean-900">+1 (242) 817-2900</a>
@@ -866,75 +857,51 @@ export default function App() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section className="py-20 bg-white" id="testimonials">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          
-          <div className="max-w-2xl mx-auto mb-14">
-            <span className="text-xs font-bold text-ocean-700 tracking-widest uppercase block mb-3">Honest Feedback</span>
-            <h2 className="font-serif text-3xl md:text-4xl text-ocean-950 font-bold leading-tight mb-4">
-              Loved by Cruise Day-Trippers & Frequent Guests
+      <section className=”py-20 bg-white” id=”testimonials”>
+        <div className=”max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center”>
+
+          <div className=”max-w-2xl mx-auto mb-12”>
+            <span className=”text-xs font-bold text-ocean-700 tracking-widest uppercase block mb-3”>Guest Reviews</span>
+            <h2 className=”font-serif text-3xl md:text-4xl text-ocean-950 font-bold leading-tight mb-4”>
+              See What Guests Are Saying
             </h2>
-            <p className="text-sm text-ocean-700 font-light">
-              Don't take our word for it. Here is why the community rates our airport and private transfers highly.
+            <p className=”text-sm text-ocean-700 font-light”>
+              Real reviews from real guests — find First Class Tours on Google and TripAdvisor.
             </p>
           </div>
 
-          {/* LARGE PROMINENT PULL QUOTE */}
-          <div className="max-w-4xl mx-auto bg-ocean-50 border border-ocean-150 rounded-3xl p-8 md:p-12 mb-12 relative overflow-hidden shadow-xs text-center">
-            <div className="absolute top-5 left-8 font-serif text-8xl text-sand-300/30 font-extrabold select-none pointer-events-none">“</div>
-            <div className="absolute bottom-5 right-8 font-serif text-8xl text-sand-300/30 font-extrabold select-none pointer-events-none">”</div>
-            
-            <p className="relative z-10 font-serif text-lg md:text-2xl text-ocean-950 italic font-semibold leading-relaxed max-w-2xl mx-auto mb-6">
-              "Harold and his team felt like family by the end of the week."
-            </p>
-            <div className="flex flex-col items-center">
-              <div className="flex text-sand-500 mb-2">
-                {[1,2,3,4,5].map(i => <Star key={i} className="w-5 h-5 fill-sand-500 inline" />)}
-              </div>
-              <span className="text-sm font-bold text-ocean-900 block font-serif">The Robertson Family Group</span>
-              <span className="text-2xs text-ocean-500 uppercase tracking-wider block font-bold font-mono">TripAdvisor Verified Guest Review</span>
-            </div>
+          <div className=”max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4”>
+            <a
+              href=”https://www.google.com/maps/search/First+Class+Tours+Freeport+Bahamas”
+              target=”_blank”
+              rel=”noreferrer”
+              className=”flex items-center justify-center gap-3 bg-white border border-ocean-150 hover:border-ocean-300 rounded-2xl p-6 shadow-xs transition-all hover:-translate-y-0.5 group”
+            >
+              <svg className=”w-6 h-6 flex-shrink-0” viewBox=”0 0 24 24” fill=”none” xmlns=”http://www.w3.org/2000/svg”>
+                <path d=”M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z” fill=”#4285F4”/>
+                <path d=”M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z” fill=”#34A853”/>
+                <path d=”M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z” fill=”#FBBC05”/>
+                <path d=”M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z” fill=”#EA4335”/>
+              </svg>
+              <span className=”text-sm font-bold text-ocean-900 group-hover:text-ocean-700”>Reviews on Google</span>
+            </a>
+
+            <a
+              href=”https://www.tripadvisor.com/Search?q=First+Class+Tours+Freeport+Bahamas”
+              target=”_blank”
+              rel=”noreferrer”
+              className=”flex items-center justify-center gap-3 bg-white border border-ocean-150 hover:border-ocean-300 rounded-2xl p-6 shadow-xs transition-all hover:-translate-y-0.5 group”
+            >
+              <svg className=”w-6 h-6 flex-shrink-0” viewBox=”0 0 24 24” fill=”#00AF87” xmlns=”http://www.w3.org/2000/svg”>
+                <path d=”M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z”/>
+              </svg>
+              <span className=”text-sm font-bold text-ocean-900 group-hover:text-ocean-700”>Reviews on TripAdvisor</span>
+            </a>
           </div>
 
-          {/* MORE PLACEHOLDERS GRID */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {REVIEWS.map((rev) => (
-              <div key={rev.id} className="bg-white border border-ocean-100 rounded-2xl p-6.5 text-left flex flex-col justify-between shadow-2xs">
-                <div>
-                  <div className="flex items-center justify-between mb-4.5">
-                    <div className="flex items-center space-x-3">
-                      <img
-                        src={rev.avatar}
-                        alt={rev.name}
-                        referrerPolicy="no-referrer"
-                        className="w-10 h-10 rounded-full object-cover border"
-                      />
-                      <div>
-                        <h4 className="text-xs md:text-sm font-bold text-ocean-950">{rev.name}</h4>
-                        <span className="text-[10px] text-ocean-500 block leading-tight">{rev.location}</span>
-                      </div>
-                    </div>
-                    
-                    <span className="bg-ocean-50 border border-ocean-100 text-ocean-800 text-[9px] font-bold py-1 px-2 rounded-md font-mono">
-                      {rev.source}
-                    </span>
-                  </div>
-
-                  <div className="flex text-sand-500 mb-3 text-xs">
-                    {[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-sand-500 inline" />)}
-                  </div>
-
-                  <p className="text-xs text-ocean-750 font-light leading-relaxed">
-                    "{rev.text}"
-                  </p>
-                </div>
-
-                <span className="text-[10px] font-bold text-ocean-400 block mt-5 font-mono">
-                  Visited {rev.date}
-                </span>
-              </div>
-            ))}
-          </div>
+          <p className=”text-xs text-ocean-500 mt-8 font-light”>
+            Visited recently? Harold would love to hear from you.
+          </p>
 
         </div>
       </section>
@@ -1083,10 +1050,6 @@ export default function App() {
                     <Phone className="w-4 h-4 text-ocean-400" />
                     +1 (242) 817-2900 (WhatsApp)
                   </a>
-                  <a href="mailto:book@firstclassbahamas.com" className="flex items-center gap-2 font-mono text-sand-400 text-xs font-bold hover:text-white transition-colors">
-                    <Mail className="w-4 h-4 text-ocean-400" />
-                    harold@firstclassbahamas.com
-                  </a>
                 </div>
               </div>
             </div>
@@ -1096,7 +1059,7 @@ export default function App() {
           <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-2xs text-ocean-300 text-center gap-4">
             <div>
               <p>© 2026 First Class Tours & Transportation. All Rights Reserved. Freeport, Grand Bahama, Bahamas.</p>
-              <p className="mt-1 text-ocean-400">Licensed by the Grand Bahama Port Authority & Ministry of Tourism (Harold Adderley OP-14).</p>
+              <p className="mt-1 text-ocean-400">Freeport, Grand Bahama, Bahamas.</p>
             </div>
             
             <div className="flex space-x-4">

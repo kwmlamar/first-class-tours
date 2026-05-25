@@ -152,39 +152,8 @@ export const TOUR_STOPS: TourStop[] = [
   }
 ];
 
-// INITIAL TESTIMONIALS (REAL GRAND BAHAMA REVIEWS COMPILATION)
-export const REVIEWS: Review[] = [
-  {
-    id: 'rev-1',
-    name: 'Sarah & Michael Dunlap',
-    location: 'Boston, Massachusetts',
-    rating: 5,
-    date: 'April 2026',
-    text: 'Harold was incredible! Our cruise ship docked in Freeport for only 7 hours. He was standing right at the gate with a sign. He drove us to Gold Rock Beach, waited for us, and had us back at the port in luxury comfort with plenty of time to spare. Hands down the highlight of our Bahamas trip.',
-    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200',
-    source: 'CruiseCritic'
-  },
-  {
-    id: 'rev-2',
-    name: 'The Robertson Family Group (9 Pax)',
-    location: 'Houston, Texas',
-    rating: 5,
-    date: 'May 2026',
-    text: 'We booked the private high-roof van for a customizable 5-hour sightseeing island tour. Harold knew every secret spot, got us the best fresh conch salad on the beach, and shared the rich history of the Adderley family in Freeport. Standard of transport is immaculate, highly recommended!',
-    avatar: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&q=80&w=200',
-    source: 'TripAdvisor'
-  },
-  {
-    id: 'rev-3',
-    name: 'Marcus Vance',
-    location: 'Atlanta, Georgia (Frequent VIP Nest Guest)',
-    rating: 5,
-    date: 'March 2026',
-    text: 'Traveling for VIP private resort events in Freeport can sometimes be stressful. First Class Tours makes it seamless. Available 24/7, high executive vehicle standard, always exactly on time. Harold is the ultimate gentleman. I wouldn\'t use anyone else in Grand Bahama.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
-    source: 'Google'
-  }
-];
+// REVIEWS — placeholder until real guest reviews are collected
+export const REVIEWS: Review[] = [];
 
 // FAQs
 export interface FAQItem {
@@ -202,15 +171,15 @@ export const FAQS: FAQItem[] = [
     answer: 'No worries at all. We are open 24/7. We track all incoming flights to FPO. Even if your flight is delayed by hours, we guarantee your private SUV or Tour Van will be patiently waiting for you when you step out of customs.'
   },
   {
-    question: 'How does payment work? Do you accept credit cards?',
-    answer: 'Yes! We accept all major Credit Cards, digital cards, and cash. You can complete your deposit/booking outline through our real-time website booking pipeline, and finalize the payment safely with Harold directly upon arrival or at the end of your trip.'
+    question: 'How does payment work?',
+    answer: 'Payment is handled directly with Harold — cash and common digital payment methods are accepted. You can submit your booking request online and Harold will confirm the details and payment method with you over WhatsApp before your tour date.'
   },
   {
-    question: 'Can we completely customize our sightseeing tour itinerary?',
-    answer: 'Absolutely. That is what makes us First Class. You can use our interactive Tour Builder here online to select stops, or you can simply chat with Harold upon boarding to adjust the stops. We adjust entirely to your mood, pace, and interests.'
+    question: 'Can we completely customize our tour itinerary?',
+    answer: 'Yes. You can use the interactive Tour Builder on this page to choose your stops, or just tell Harold what you want when you meet. He adjusts to your pace, interests, and schedule — nothing is fixed.'
   },
   {
-    question: 'Is Harold Adderley actually our driver?',
-    answer: 'Harold owns, operates, and personally drives the majority of our customers! In cases of multiple overlapping private shuttle block bookings, you will be driven by one of Harold\'s carefully vetted, certified Bahamian professional drivers who share the exact same First Class service standard.'
+    question: 'Is Harold Adderley our actual guide?',
+    answer: 'Harold personally leads the tours and handles transport. He is the owner and operator — when you book with First Class Tours, you get Harold.'
   }
 ];
