@@ -311,8 +311,8 @@ export default function App() {
               </div>
 
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-extrabold tracking-tight leading-tight leading-none leading-normal">
-                Grand Bahama,<br />
-                <span className="text-sand-400 inline-block mt-1">First Class.</span>
+                The Real<br />
+                <span className="text-sand-400 inline-block mt-1">Grand Bahama.</span>
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-ocean-150 font-light leading-relaxed max-w-2xl">
@@ -1005,7 +1005,7 @@ export default function App() {
         </div>
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
-          <span className="text-xs font-bold text-sand-400 uppercase tracking-widest font-mono">Grand Bahama, First Class.</span>
+          <span className="text-xs font-bold text-sand-400 uppercase tracking-widest font-mono">The Real Grand Bahama.</span>
           
           <h2 className="font-serif text-3xl md:text-5xl font-extrabold text-white leading-tight">
             Ready to see Grand Bahama the right way?
