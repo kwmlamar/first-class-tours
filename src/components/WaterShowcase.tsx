@@ -19,42 +19,42 @@ export interface BeachPhoto {
 export const BAHAMAS_PHOTOS: BeachPhoto[] = [
   {
     id: 'port-welcoming',
-    title: 'The Turquoise Welcome Gates',
-    subtitle: 'Freeport Harbour Cruise Channel',
-    category: 'Freeport Harbour Channel',
+    title: 'Freeport Harbour',
+    subtitle: 'Cruise Channel',
+    category: 'Freeport Harbour',
     url: 'https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&q=80&w=1200',
-    description: 'Your very first view of Grand Bahama\'s magical water color. This shallow cruise channel is flanked by bright, pastel-colored wooden shops, towering palm trees, and active catamarans floating on a pure turquoise mirror. Our drivers wait directly here at the gate to begin your ocean-side escape.',
-    hue: 'Luminous Neon Cyan (#00C6DF)',
-    sand: 'Coral Beach Pearl',
-    bestTime: 'High Noon (for maximum water glow)',
-    accentQuote: 'The water at the cruise port is so bright it looks artificial — a stunning, neon-teal welcome to Freeport.',
-    transferDestination: 'Freeport Cruise Port (Main Gates)'
+    description: 'Your first view of Grand Bahama as your cruise ship docks. The shallow harbour water runs a vivid turquoise — Harold and his team wait right at the port gates, ready to take you straight into the island.',
+    hue: 'Turquoise',
+    sand: 'Coral sand',
+    bestTime: 'Midday',
+    accentQuote: 'Step off the ship and straight into Grand Bahama — Harold is waiting at the gate.',
+    transferDestination: 'Freeport Cruise Port'
   },
   {
     id: 'gold-rock-crystal',
-    title: 'The Pristine Sandbar Dream',
-    subtitle: 'Gold Rock Beach (Lucayan National Park)',
-    category: 'Lucayan National Park Shoreline',
+    title: 'Gold Rock Beach',
+    subtitle: 'Lucayan National Park',
+    category: 'Lucayan National Park',
     url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200',
-    description: 'Arguably the most famous beach in the Bahamas. At low tide, the emerald water retreats to expose miles of rippled, powdery white-sand bars. Towering palms line the left coast, while swimmers wade in waist-deep water that remains completely transparent for hundreds of yards out.',
-    hue: 'Crystal Seafoam & Electric Jade',
-    sand: 'Sugar-fine Soft White Sand',
-    bestTime: 'Low Tide hour (highly recommended by Harold)',
-    accentQuote: 'Where "Pirates of the Caribbean" was filmed — a tranquil, untouched beach sanctuary where the ocean merges with the sky.',
-    transferDestination: 'Gold Rock Beach & Lucayan Caves'
+    description: 'One of the most beautiful beaches in the Bahamas. At low tide the water pulls back to reveal wide, rippled sandbars you can walk out on. Clear, calm, and uncrowded — a regular stop on Harold\'s beach experience tours.',
+    hue: 'Emerald and white',
+    sand: 'Fine white sand',
+    bestTime: 'Low tide',
+    accentQuote: 'Wide open sandbars, crystal water, and no crowds — this is what Grand Bahama really looks like.',
+    transferDestination: 'Gold Rock Beach'
   },
   {
     id: 'coastal-panorama',
-    title: 'The Aerial Reef & Forest Shelf',
-    subtitle: 'Sunset Over Grand Bahama\'s Pristine Coastline',
-    category: 'Grand Bahama Coastline (Aerial)',
+    title: 'Grand Bahama Coastline',
+    subtitle: 'Aerial View',
+    category: 'Grand Bahama Coast',
     url: 'https://images.unsplash.com/photo-1473116763269-255ea7604bb6?auto=format&fit=crop&q=80&w=1200',
-    description: 'An breathtaking perspective showing the thin ribbon of sugar-sand beach separating lush green pine forests from a massive, shallow turquoise shelf. Watch the pale-pink sunset reflect on the peaceful, mirror-like shallows before the bottom drops into the deep navy Atlantic.',
-    hue: 'Translucent Aqua fading to Sapphire Blue',
-    sand: 'Mixed Silica & Coral-Shell Pearl',
-    bestTime: 'Sunset / Evening Dusk',
-    accentQuote: 'An extraordinary aerial sight showing the sheer scale of Freeport\'s crystal-clear shallow reef boundary.',
-    transferDestination: 'West End Marina & Condos (Old Bahama Bay)'
+    description: 'A look at the full scale of Grand Bahama\'s coastline — pine forests meeting shallow turquoise reef as far as you can see. The island is bigger and quieter than most visitors expect, and Harold knows every corner of it.',
+    hue: 'Aqua and deep blue',
+    sand: 'Shell and coral mix',
+    bestTime: 'Late afternoon',
+    accentQuote: 'Grand Bahama is bigger and quieter than most visitors expect — Harold knows every corner of it.',
+    transferDestination: 'West End, Grand Bahama'
   }
 ];
 
@@ -91,11 +91,11 @@ export default function WaterShowcase({ onSelectPhotoAsBackdrop, activeBackdropU
           </div>
           
           <h2 className="font-serif text-3xl md:text-5xl font-bold tracking-tight text-ocean-950">
-            Experience the World\'s Most Beautiful Water
+            The Waters That Make Grand Bahama Worth It
           </h2>
-          
+
           <p className="text-sm md:text-base text-ocean-800/80 font-light leading-relaxed">
-            The Bahamas is defined by the extraordinary clarity of its shallow reefs. Explore three real photographs of Grand Bahama\'s waters sent in by our guests, and discover how First Class Tours puts these shores at the heart of your island itinerary.
+            The Bahamas is known for its water for a reason. These are real spots Harold takes guests to — from the cruise port gates to open beaches most tourists never find.
           </p>
         </div>
 
@@ -144,34 +144,6 @@ export default function WaterShowcase({ onSelectPhotoAsBackdrop, activeBackdropU
               })}
             </div>
 
-            {/* Live Backdrop Customizer Tooltip */}
-            {onSelectPhotoAsBackdrop && (
-              <div className="bg-sand-100/60 border border-sand-300 p-5 rounded-2xl text-left hidden lg:block">
-                <div className="flex items-center gap-2 text-sand-500 mb-1.5">
-                  <Sparkles className="w-4 h-4 fill-sand-500 text-sand-500 animate-spin-slow" />
-                  <span className="text-[10px] font-bold tracking-wider uppercase font-mono">App Ambient Decorator</span>
-                </div>
-                <p className="text-xs text-ocean-900/80 leading-relaxed font-light mb-4">
-                  Love this water scene? Tap below to set this specific photograph as the large full-bleed backdrop in our main website Hero header!
-                </p>
-                
-                <button
-                  onClick={() => onSelectPhotoAsBackdrop(activePhoto.url)}
-                  disabled={activeBackdropUrl === activePhoto.url}
-                  className={`w-full py-3 px-4 rounded-xl text-xs font-bold transition-all shadow-sm flex items-center justify-center gap-1.5 cursor-pointer select-none ${
-                    activeBackdropUrl === activePhoto.url
-                      ? 'bg-emerald-600 text-white cursor-default'
-                      : 'bg-ocean-950 hover:bg-ocean-900 text-white hover:-translate-y-0.5 active:translate-y-0'
-                  }`}
-                >
-                  {activeBackdropUrl === activePhoto.url ? (
-                    <>✓ Set as Current Backdrop</>
-                  ) : (
-                    <>Set as Site Hero Backdrop</>
-                  )}
-                </button>
-              </div>
-            )}
 
           </div>
 
@@ -195,13 +167,6 @@ export default function WaterShowcase({ onSelectPhotoAsBackdrop, activeBackdropU
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
                     />
-                    {/* Glowing water tag overlays */}
-                    <div className="absolute top-4 left-4 flex gap-2">
-                      <span className="px-3 py-1 bg-black/50 text-white backdrop-blur-md rounded-md text-[10px] font-bold uppercase tracking-wider border border-white/15 shadow flex items-center gap-1">
-                        <Droplets className="w-3.5 h-3.5 text-ocean-300 fill-ocean-300" />
-                        Water Color: {activePhoto.hue}
-                      </span>
-                    </div>
 
                     <div className="absolute bottom-4 left-4 right-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 rounded-xl border border-white/5 backdrop-blur-2xs text-left">
                       <span className="text-[10px] font-bold text-sand-300 uppercase tracking-widest font-mono">
@@ -216,32 +181,6 @@ export default function WaterShowcase({ onSelectPhotoAsBackdrop, activeBackdropU
                     </div>
                   </div>
 
-                  {/* Scientific/Experiential Shoreline Specs Row */}
-                  <div className="grid grid-cols-3 gap-4 py-6 border-b border-ocean-100">
-                    <div className="text-left">
-                      <span className="text-[9px] font-mono text-ocean-500 uppercase tracking-wider block">Water Luminescence</span>
-                      <span className="text-xs sm:text-sm font-bold text-ocean-950 flex items-center gap-1 mt-0.5">
-                        <Droplets className="w-3.5 h-3.5 text-ocean-500 flex-shrink-0" />
-                        {activePhoto.hue.split('(')[0].trim()}
-                      </span>
-                    </div>
-
-                    <div className="text-left">
-                      <span className="text-[9px] font-mono text-ocean-500 uppercase tracking-wider block">Coastline Sand Base</span>
-                      <span className="text-xs sm:text-sm font-bold text-ocean-950 flex items-center gap-1 mt-0.5">
-                        <Sun className="w-3.5 h-3.5 text-sand-500 flex-shrink-0" />
-                        {activePhoto.sand}
-                      </span>
-                    </div>
-
-                    <div className="text-left">
-                      <span className="text-[9px] font-mono text-ocean-500 uppercase tracking-wider block">Optimal Viewing Hour</span>
-                      <span className="text-xs sm:text-sm font-bold text-ocean-950 flex items-center gap-1 mt-0.5">
-                        <Waves className="w-3.5 h-3.5 text-ocean-600 flex-shrink-0" />
-                        {activePhoto.bestTime.split('(')[0].trim()}
-                      </span>
-                    </div>
-                  </div>
 
                   {/* Localized Storytelling */}
                   <div className="pt-6 text-left">
@@ -263,24 +202,13 @@ export default function WaterShowcase({ onSelectPhotoAsBackdrop, activeBackdropU
                     </p>
                   </div>
 
-                  <div className="flex gap-2 w-full sm:w-auto">
-                    {onSelectPhotoAsBackdrop && (
-                      <button
-                        onClick={() => onSelectPhotoAsBackdrop(activePhoto.url)}
-                        className="flex-1 sm:flex-none uppercase text-[10px] font-bold border border-ocean-200 hover:border-ocean-400 bg-white hover:bg-ocean-50 text-ocean-900 py-3 px-4 rounded-xl transition-all cursor-pointer block lg:hidden"
-                      >
-                        Set as Backdrop
-                      </button>
-                    )}
-
-                    <button
-                      onClick={() => handleScrollToBooking(activePhoto.transferDestination)}
-                      className="flex-grow sm:flex-none bg-ocean-900 hover:bg-ocean-950 text-white font-bold py-3 px-5 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md shadow-ocean-900/10 cursor-pointer transition-all hover:-translate-y-0.5 active:translate-y-0"
-                    >
-                      Book Tour Stop to this location
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
+                  <button
+                    onClick={() => handleScrollToBooking(activePhoto.transferDestination)}
+                    className="bg-ocean-900 hover:bg-ocean-950 text-white font-bold py-3 px-5 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md shadow-ocean-900/10 cursor-pointer transition-all hover:-translate-y-0.5 active:translate-y-0"
+                  >
+                    Add this stop to your tour
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
                 </div>
               </motion.div>
             </AnimatePresence>
