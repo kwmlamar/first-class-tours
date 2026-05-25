@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ocean-950: #011d29;
+  --color-ocean-900: #012e40;
+  --color-ocean-850: #02506e;
+  --color-ocean-800: #006c8a;
+  --color-ocean-750: #0087a3;
+  --color-ocean-700: #009cb5;
+  --color-ocean-650: #00adc6;
+  --color-ocean-600: #00b9d1;
+  --color-ocean-500: #00c6df;
+  --color-ocean-400: #33d4eb;
+  --color-ocean-300: #6fe1f2;
+  --color-ocean-200: #adecf6;
+  --color-ocean-150: #caf3f9;
+  --color-ocean-100: #e0f8fc;
+  --color-ocean-50: #f1fbfd;
+  
+  --color-sand-500: #b8860b;
+  --color-sand-400: #dfb136;
+  --color-sand-300: #e9c46a;
+  --color-sand-200: #f1dd9a;
+  
+  --color-amber-accent: #f4a261;
+  --color-coral-accent: #e76f51;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-ocean-950);
+  }
+  
+  body {
+    background-color: #f8fafc;
+  }
+}
+
+/* Custom premium styles */
+.text-stroke-badge {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, var(--color-sand-400) 0%, var(--color-sand-500) 100%);
+}
+
+.ocean-gradient {
+  background: linear-gradient(135deg, var(--color-ocean-900) 0%, var(--color-ocean-950) 100%);
+}
+
+.card-luxury {
+  border: 1px solid rgba(0, 77, 77, 0.06);
+  box-shadow: 0 4px 20px -2px rgba(0, 43, 46, 0.03);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-luxury:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 12px 30px -4px rgba(0, 43, 46, 0.08);
+}
