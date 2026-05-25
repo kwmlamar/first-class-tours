@@ -88,6 +88,15 @@ export const VEHICLES: Vehicle[] = [
 // TOUR STOPS FOR ISLAND SIGHTSEEING
 export const TOUR_STOPS: TourStop[] = [
   {
+    id: 'dorsette-conch',
+    name: 'Dorsette Conch Demonstration',
+    duration: 1.0,
+    costAddition: 0,
+    description: 'Watch a live conch demonstration by a true Bahamian local — cracking, cleaning, and preparing fresh conch the traditional way. The most authentic food experience in Grand Bahama.',
+    image: 'https://images.unsplash.com/photo-1522885140904-7b92dbb3e171?auto=format&fit=crop&q=80&w=800',
+    category: 'dining'
+  },
+  {
     id: 'gold-rock',
     name: 'Gold Rock Beach & Lucayan Caves',
     duration: 3.5,

@@ -316,7 +316,7 @@ export default function App() {
               </h1>
 
               <p className="text-base sm:text-lg md:text-xl text-ocean-150 font-light leading-relaxed max-w-2xl">
-                From the airport to Grand Bahama's best beaches — we handle every mile so your trip is exactly what it should be. Guided by native local experts since 2014.
+                Food tours, beach experiences, and private sightseeing — guided by a native local expert who knows every corner of Grand Bahama. Since 2014.
               </p>
 
               {/* Verified Trust Strip */}
@@ -335,23 +335,23 @@ export default function App() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-3">
-                <a
-                  href="#interactive-planner"
-                  className="bg-sand-400 hover:bg-sand-500 text-ocean-950 font-black py-4 px-8 rounded-xl text-center shadow-lg shadow-sand-400/20 transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2 text-sm"
-                >
-                  Book Your Transfer
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-
                 <button
                   onClick={() => {
                     const el = document.getElementById('custom-tour-builder');
                     if (el) el.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="bg-white/10 hover:bg-white/15 backdrop-blur-xs border border-white/20 text-white font-bold py-4 px-8 rounded-xl text-center transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-sm"
+                  className="bg-sand-400 hover:bg-sand-500 text-ocean-950 font-black py-4 px-8 rounded-xl text-center shadow-lg shadow-sand-400/20 transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer flex items-center justify-center gap-2 text-sm"
                 >
-                  Plan a Custom Tour
+                  Explore Our Tours
+                  <ArrowRight className="w-4 h-4" />
                 </button>
+
+                <a
+                  href="#interactive-planner"
+                  className="bg-white/10 hover:bg-white/15 backdrop-blur-xs border border-white/20 text-white font-bold py-4 px-8 rounded-xl text-center transition-all hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-sm flex items-center justify-center"
+                >
+                  Book a Transfer
+                </a>
               </div>
 
             </div>
@@ -362,41 +362,47 @@ export default function App() {
               
               <div className="relative bg-white/5 border border-white/10 p-6 md:p-7 rounded-2xl backdrop-blur-md">
                 <div className="flex justify-between items-center mb-4">
-                  <span className="text-[10px] uppercase font-bold text-sand-300 font-mono tracking-wider">Fast Route Presets</span>
-                  <span className="text-[10px] text-ocean-200">Freeport Rates</span>
+                  <span className="text-[10px] uppercase font-bold text-sand-300 font-mono tracking-wider">Our Experiences</span>
+                  <span className="text-[10px] text-ocean-200">Freeport, Grand Bahama</span>
                 </div>
-                
+
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition-all">
                     <div>
-                      <span className="text-xs text-ocean-300 font-light block">FPO Airport to Pelican Bay</span>
-                      <strong className="text-sm text-white font-semibold block mt-0.5">Exec SUV Class (1-5 Passengers)</strong>
+                      <span className="text-xs text-ocean-300 font-light block">Conch demo · Port Lucaya · Local eats</span>
+                      <strong className="text-sm text-white font-semibold block mt-0.5">Grand Bahama Food Tour</strong>
                     </div>
-                    <span className="font-mono text-base font-bold text-sand-300">$75 total</span>
+                    <span className="font-mono text-sm font-bold text-sand-300">Custom rate</span>
                   </div>
 
                   <div className="flex justify-between items-center p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition-all">
                     <div>
-                      <span className="text-xs text-ocean-300 font-light block">Freeport Cruise Port to Taino Beach</span>
-                      <strong className="text-sm text-white font-semibold block mt-0.5">Luxury Tour Van (up to 14 Pax)</strong>
+                      <span className="text-xs text-ocean-300 font-light block">Taino Beach · Gold Rock · Coastal stops</span>
+                      <strong className="text-sm text-white font-semibold block mt-0.5">Beach Experience</strong>
                     </div>
-                    <span className="font-mono text-base font-bold text-sand-300">$120 total</span>
+                    <span className="font-mono text-sm font-bold text-sand-300">Custom rate</span>
                   </div>
 
                   <div className="flex justify-between items-center p-3.5 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition-all">
                     <div>
-                      <span className="text-xs text-ocean-300 font-light block">East-End Custom Day Tour</span>
-                      <strong className="text-sm text-white font-semibold block mt-0.5">6-Hour Full Sightseeing Van hire</strong>
+                      <span className="text-xs text-ocean-300 font-light block">Garden of the Groves · Heritage Trail</span>
+                      <strong className="text-sm text-white font-semibold block mt-0.5">Island Sightseeing Tour</strong>
                     </div>
-                    <span className="font-mono text-base font-bold text-sand-300">$110 / hr</span>
+                    <span className="font-mono text-sm font-bold text-sand-300">Custom rate</span>
                   </div>
                 </div>
 
                 <div className="mt-5 text-center">
-                  <a href="#interactive-planner" className="text-xs text-sand-300 hover:text-sand-400 font-bold tracking-wide flex items-center justify-center gap-1">
-                    Calculate custom routes under interactive board below
+                  <button
+                    onClick={() => {
+                      const el = document.getElementById('custom-tour-builder');
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="text-xs text-sand-300 hover:text-sand-400 font-bold tracking-wide flex items-center justify-center gap-1 w-full cursor-pointer"
+                  >
+                    Build your custom tour below
                     <ArrowDown className="w-3.5 h-3.5 animate-bounce" />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -515,8 +521,60 @@ export default function App() {
 
           {/* Cards Grid of Services */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* SERVICE CARD 1 */}
+
+            {/* SERVICE CARD 1 — Food Tour */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">Grand Bahama Food Tour</h3>
+                <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
+                  A guided culinary journey through Grand Bahama's best flavours — fresh conch demonstrations, Port Lucaya local eats, and authentic Bahamian street food led by Harold himself.
+                </p>
+              </div>
+              <a href="#custom-tour-builder" className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
+                Plan your food tour <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+
+            {/* SERVICE CARD 2 — Beach Experience */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">Beach Experience</h3>
+                <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
+                  Private beach stops at Taino Beach, Gold Rock, and hidden coastal spots only locals know. Harold handles the transport, timing, and logistics — you just enjoy the water.
+                </p>
+              </div>
+              <a href="#custom-tour-builder" className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
+                Choose your beach stops <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+
+            {/* SERVICE CARD 3 — Sightseeing Tour */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
+                  <Compass className="w-6 h-6" />
+                </div>
+                <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">Sightseeing Tour</h3>
+                <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
+                  Garden of the Groves, Port Lucaya Marketplace, the Heritage Trail, and more — a full island overview guided by someone who has lived it for decades.
+                </p>
+              </div>
+              <a href="#custom-tour-builder" className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
+                Design your sightseeing route <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </div>
+
+            {/* SERVICE CARD 4 — Airport Transfers */}
             <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
@@ -526,15 +584,15 @@ export default function App() {
                 </div>
                 <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">FPO Airport Transfers</h3>
                 <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
-                  Direct transport from Freeport International Airport (FPO) directly to Pelican Bay, Viva Fortuna, or private West End estates. Flight tracking included.
+                  Direct transport from Freeport International Airport (FPO) to Pelican Bay, Viva Fortuna, or private West End estates. Flight tracking included.
                 </p>
               </div>
               <a href="#interactive-planner" onClick={() => setServiceTypeAndScroll('airport-transfer')} className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
-                Schedule Airport Booking <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                Schedule airport pickup <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
 
-            {/* SERVICE CARD 2 */}
+            {/* SERVICE CARD 5 — Cruise Port Pickups */}
             <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
@@ -544,62 +602,11 @@ export default function App() {
                 </div>
                 <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">Cruise Port Pickups</h3>
                 <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
-                  No queueing at the crowded cruise docks. Your driver waits at the gate with a custom greeting signboard ready for instant, beach-ready direct boarding.
+                  No queueing at the crowded cruise docks. Your driver waits at the gate with a signboard — ready for instant, beach-ready boarding the moment you step off.
                 </p>
               </div>
               <a href="#interactive-planner" onClick={() => setServiceTypeAndScroll('cruise-port')} className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
-                Schedule Port Pick-up <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </div>
-
-            {/* SERVICE CARD 3 */}
-            <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
-                  <Compass className="w-6 h-6" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">Private Island Tours</h3>
-                <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
-                  Spend your island hours visiting Gold Rock Beach barrier reefs or botanical waterfalls on your own timeline. Customize everything using our online planner below.
-                </p>
-              </div>
-              <a href="#custom-tour-builder" className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
-                Design custom tour <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </div>
-
-            {/* SERVICE CARD 4 */}
-            <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
-                  <Shield className="w-6 h-6" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">VIP & Group Transport</h3>
-                <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
-                  Immaculate executive suburban SUVs and full-roof transport vans matching local premium event coordinates, board meetings, weddings, and private estates.
-                </p>
-              </div>
-              <a href="#interactive-planner" className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
-                Secure executive SUV <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </div>
-
-            {/* SERVICE CARD 5 */}
-            <div className="bg-white rounded-2xl p-6 md:p-8 card-luxury text-left flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-ocean-100 text-ocean-800 flex items-center justify-center mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-serif text-xl font-bold text-ocean-950 mb-2.5">Island Sightseeing Curation</h3>
-                <p className="text-xs md:text-sm text-ocean-700 font-light leading-relaxed mb-6">
-                  Deep local heritage sights, Bahamian historic landmarks, and our local master-shoppers guides for Port Lucaya conch highlights, directly led by Harold Adderley.
-                </p>
-              </div>
-              <a href="#custom-tour-builder" className="text-xs font-bold text-ocean-800 hover:text-ocean-600 flex items-center gap-1.5 group">
-                View sightseeing Stops <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                Schedule port pickup <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
 

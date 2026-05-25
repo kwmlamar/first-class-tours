@@ -3,7 +3,7 @@ import { TOUR_STOPS, VEHICLES, TourStop, Vehicle } from '../types';
 import { Clock, MapPin, Compass, Check, Sparkles, MessageSquare, Plus, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export default function TourPlanner() {
-  const [selectedStops, setSelectedStops] = useState<string[]>(['gold-rock', 'garden-groves']);
+  const [selectedStops, setSelectedStops] = useState<string[]>(['dorsette-conch', 'garden-groves', 'port-lucaya']);
   const [vehicleId, setVehicleId] = useState<string>('tour-van');
   const [tourName, setTourName] = useState('');
   const [tourEmail, setTourEmail] = useState('');
