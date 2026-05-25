@@ -10,19 +10,14 @@ import BookingForm from './components/BookingForm';
 import TourPlanner from './components/TourPlanner';
 import WaterShowcase from './components/WaterShowcase';
 
-// CUSTOM RE-USABLE CIRCULAR LOGO BADGE
+// LOGO BADGE — uses real First Class Tours logo
 function LogoBadge({ className = "w-12 h-12" }: { className?: string }) {
   return (
-    <div className={`relative rounded-full flex items-center justify-center bg-ocean-950 border border-sand-400 select-none ${className}`}>
-      {/* Outer spinning ring effect on hover */}
-      <div className="absolute inset-0.5 rounded-full border border-dashed border-sand-400/30 animate-[spin_40s_linear_infinite]" />
-      
-      {/* Central typography */}
-      <div className="flex flex-col items-center justify-center text-center">
-        <span className="font-serif text-base md:text-lg font-black text-sand-400 tracking-tighter leading-none">FC</span>
-        <span className="text-[5px] font-mono tracking-widest text-ocean-100 uppercase mt-0.5 leading-none px-0.5">TOURS</span>
-      </div>
-    </div>
+    <img
+      src="/logo.png"
+      alt="First Class Tours logo"
+      className={`rounded-full object-cover select-none ${className}`}
+    />
   );
 }
 
