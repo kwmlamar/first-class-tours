@@ -6,28 +6,30 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
-  
-  --color-ocean-950: #011d29;
-  --color-ocean-900: #012e40;
-  --color-ocean-850: #02506e;
-  --color-ocean-800: #006c8a;
-  --color-ocean-750: #0087a3;
-  --color-ocean-700: #009cb5;
-  --color-ocean-650: #00adc6;
-  --color-ocean-600: #00b9d1;
-  --color-ocean-500: #00c6df;
-  --color-ocean-400: #33d4eb;
-  --color-ocean-300: #6fe1f2;
-  --color-ocean-200: #adecf6;
-  --color-ocean-150: #caf3f9;
-  --color-ocean-100: #e0f8fc;
-  --color-ocean-50: #f1fbfd;
-  
-  --color-sand-500: #b8860b;
-  --color-sand-400: #dfb136;
-  --color-sand-300: #e9c46a;
-  --color-sand-200: #f1dd9a;
-  
+
+  /* Royal blue palette — pulled from the First Class Tours logo */
+  --color-ocean-950: #06174a;
+  --color-ocean-900: #0c2878;
+  --color-ocean-850: #1040a8;
+  --color-ocean-800: #1555c0;
+  --color-ocean-750: #1a6ad4;
+  --color-ocean-700: #2080e8;
+  --color-ocean-650: #3a96f5;
+  --color-ocean-600: #57a9f7;
+  --color-ocean-500: #7abdf9;
+  --color-ocean-400: #a2d0fb;
+  --color-ocean-300: #c2e1fd;
+  --color-ocean-200: #d9edfe;
+  --color-ocean-150: #e8f4ff;
+  --color-ocean-100: #f0f8ff;
+  --color-ocean-50: #f7fbff;
+
+  /* Gold — warmer to match the logo's sun */
+  --color-sand-500: #c98b00;
+  --color-sand-400: #f0b429;
+  --color-sand-300: #f9d062;
+  --color-sand-200: #fce9a8;
+
   --color-amber-accent: #f4a261;
   --color-coral-accent: #e76f51;
 }
@@ -40,7 +42,7 @@
   }
   
   body {
-    background-color: #f8fafc;
+    background-color: #f5f9ff;
   }
 }
 
@@ -54,7 +56,7 @@
 }
 
 .ocean-gradient {
-  background: linear-gradient(135deg, var(--color-ocean-900) 0%, var(--color-ocean-950) 100%);
+  background: linear-gradient(135deg, var(--color-ocean-850) 0%, var(--color-ocean-950) 100%);
 }
 
 .card-luxury {
